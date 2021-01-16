@@ -18,9 +18,9 @@
     "Ian Vizarra",
     "Warren Gonzaga"
   ],
-  "main": "app.js",
+  "main": "cli.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node cli.js",
     "dev": "nodemon app.js"
   },
   "author": "Waren Gonzaga",
