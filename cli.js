@@ -12,7 +12,8 @@ const axios = require('axios'),
             .describe('plain', 'If your cli does not support ANSI encoding similar to /cmd usage and layout')        
             .example('$0 PH --plain', 'Generate stats for Philippines with plain format')
             .help('help')
-            .argv;   
+            .argv;
+const http = require('http');
 
 const getGlobal = (data) => {
     const params = [ data.cases, data.deaths,data.recovered, data.updated];
@@ -58,3 +59,4 @@ const getCountry = async (u, country) => {
     !country && getGlobal(all.data);
     country && getCountry(all.data, country);
 })()
+app.listen(3000, '127.0.0.1');
