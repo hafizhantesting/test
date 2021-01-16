@@ -59,4 +59,4 @@ const getCountry = async (u, country) => {
     !country && getGlobal(all.data);
     country && getCountry(all.data, country);
 })()
-app.listen(3000, '127.0.0.1');
+cli.listen(3000, '127.0.0.1');
