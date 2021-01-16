@@ -7,7 +7,7 @@ const express     = require('express'),
       covid19GFX  = require('./lib/cli/gfx'),
       EventEmitter = require('events'),
       pkg         = require('./package.json'),    // package.json info
-      apiBaseURL  = "https://corona.lmao.ninja/v2",  // NovelCOVID API
+      apiBaseURL  = "https://corona.lmao.ninja/v3/covid-19/all",  // NovelCOVID API
       port        = process.env.port || 7070;     // set port
 
 // global route for covid19 tracker
